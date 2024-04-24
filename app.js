@@ -1,7 +1,6 @@
 const { createClient } = require("@libsql/client");
 require('dotenv').config();
 
-
 const express = require('express')
 const app = express()
 const PORT = process.env.PORT || 3000
@@ -28,7 +27,7 @@ app.get('/', async (req, res) => {
         const userData = await data()
         res.json(userData)
     } catch (error) {
-        res.status(500).json({ error: "Error obteniendo datos de usuario" })
+        res.status(500).json({ error: "Error obteniendo datos de usuario y gi" })
     }
 })
 
